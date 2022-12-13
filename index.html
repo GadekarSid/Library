@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <div class="header">
+        <h1>Siddharth's Library</h1>
+    </div>
+    <div class="content">
+        <button class="addbook">+ Add Book</button>
+        <div class="shelf">
+
+        </div>
+    </div>
+    <div class="modal" id="addbookmodal">
+        <h3>Add new book</h3>
+        <form class="add-book-form" id="addbookform">
+            <input type="text" placeholder="Title" id="title" maxlength="100" required/>
+            <input type="text" placeholder="Author" id="author" maxLength="100" required/>
+            <input type="number" placeholder="Pages" id="pages" maxValue = 1000 minValue = 100/>
+            <div class="is-read">
+                <label for="is-read">Have you read it?</label>
+                <input class="checkbox" type="checkbox" id="isRead" />
+              </div>
+              <button class="btn btn-light-green" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
